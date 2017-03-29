@@ -27,6 +27,7 @@ public:
 
 protected:
     Singleton( ){ }
+    virtual ~Singleton( ){ }
 
 private:
     static T* Instance;

@@ -3,11 +3,12 @@
 
 class SingletonTest : public Singleton<SingletonTest>
 {
+    friend Singleton;
 public:
     void PrintSomething( );
 
 private:
     SingletonTest( ){ }
-    friend Singleton;
+    ~SingletonTest( ){ }
 
 };
